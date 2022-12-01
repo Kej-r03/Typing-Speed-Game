@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Typing Speed Tester</title>
+        <link rel="icon" href="Keyboard.ico">
+        <link rel="stylesheet" href="Style.css">
+        <script src="Java.js"></script>
+        <script src="Para.js"></script>
+    </head>
+    <body>
+     <div id="header">
+         <h1 style="text-align:center; color: rgb(161, 198, 233); text-decoration: overline underline double;"><b>Welcome to Typing Speed Tester</b></h1>
+        <h2 style="text-align:center; color: rgb(161, 198, 233)"><u>Play the Game and Beat your own High Score!</u></h2><hr></div>
+
+        <div>
+            <br>
+            <form>
+                  <label for="time" style="margin-left: 10px;font: 20px 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><mark>Select Time:</mark></label><br>
+                  <select id="time" onchange="Timeselected()">
+                    <option value="0">Select a Time Limit...</option>
+                    <option value="1">1 Minute</option>
+                    <option value="2">2 Minute</option>
+                    <option value="3">3 Minute</option>
+                    <option value="5">5 Minute</option>
+                </select>
+                <br><br>
+                <label for="level" style="margin-left: 10px; color: white; font: 20px 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><mark>Select Difficulty Level:</mark></label><br>
+                <select id="level" onchange="Levelselected()">
+                    <option value="0">Select a level...</option>
+                    <option value="B">Beginner</option>
+                    <option value="E">Easy</option>
+                    <option value="M">Medium</option>
+                    <option value="D">Difficult</option>
+                </select><br>
+            </form>
+            <button id='start' onclick="opengame()">Let's Take the Test!</button>
+        
+        </div><hr><br>
+
+        <div id="TypeBox">
+            <div id="timerem"><p><b>Time Remaining(in secs)</b></p><hr><p id="count"></p></div>
+               <div id="buttons"></div>
+               <br><hr><br>
+               <div class="grid-container">
+            <div class="grid-item"><p id="text"></p></div>
+            <div class="grid-item"><textarea id="typebox" rows="25" cols="51" style="border-radius: 15px; background-color: rgb(165, 218, 131);" placeholder="Start Typing to Start Timer..." disabled="true"></textarea></div>
+         </div>
+         
+         <br><hr><br>
+
+       <div class="results">
+            <span><p>Characters Per Min. (CPM):</p><hr><P id="cpm"></P></span>
+            <span><p>Words Per Min. (WPM): </p><hr><P id="wpm"></P></span>
+            <span><p>No of Errors: </p><hr><P id="errors"></P></span>
+            <span><p>Accuracy: </p><hr><P id="accuracy"></P></span>
+        </div>
+        <br>
+       <div class="hs"><span><p>Highest Score (WPM)</p><hr><p id="highscore"></p></span></div>
+    </body>
+</html>

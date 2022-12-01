@@ -1,0 +1,106 @@
+body{
+    background-image: url("Key.jpg");
+    background-size: cover;
+}
+mark{
+    background-color: black;
+    color: white;
+}
+#typebox{
+    font-size: 20px;
+    resize:none;
+}
+ #header{
+     background-color: rgb(6, 5, 15);
+ }
+ .grid-container{
+    display: grid;
+    grid-template-columns: 575px 600px;
+    column-gap:20px;;
+    padding: 20px;
+    justify-content: center;
+    background-color: black;
+    border-radius: 70px;
+}
+.grid-item{
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    align-content: center;
+    padding: 10px;
+    background-color: rgb(165, 218, 131);
+    border-radius: 15px;
+    font-size: 20px;
+    text-decoration: solid;
+}
+.current{
+    background-color: yellow;
+}
+.results{
+    display: flex;
+    width:100%;
+    background-color: rgb(214, 216, 90);
+    border: solid black 5px;
+    border-radius: 200px;
+    justify-content: center;
+}
+.results>span{
+    width:20%;
+    margin:10px;
+    background-color: #f1f1f1;
+    text-align: center;
+    border: inset 4px;
+}
+.hs{
+    display: flex;
+    justify-content: center;
+}
+.hs>span{
+    width: 25%;
+    background-color: #f1f1f1;
+    border: 4px inset black;
+    text-align: center;
+}
+#time, #level{
+    width:25%;
+    height: 35;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding-left:5px;
+    outline: 5px solid rgb(58, 4, 90);
+}
+#time:hover, #level:hover{
+    cursor: pointer;
+}
+#start{
+    font-size: 20px;
+    height: 40;
+    width: 20%;
+    margin: 20px;
+    margin-left: 0px;
+    background-color: rgb(165, 218, 131);
+    border: solid 4px black;
+}
+#start:hover{
+    background-color: red;
+    cursor: pointer;
+}
+#pause, #restart, #newG{
+    width:20%;
+    height: 40;
+    margin: 20px;
+    margin-left: 0px;
+    font-size: 20px;
+    background-color: rgb(214, 216, 90);  
+    border: solid 4px black;
+    border-radius: 10px; 
+}
+#pause:hover, #restart:hover, #newG:hover{
+    background-color: red;
+    cursor: pointer;
+}
+#timerem{
+    border: solid 5px;
+    width:20%;
+    text-align: center;
+    background-color: rgb(214, 216, 90);
+    border-radius: 20px;
+}
